@@ -2,6 +2,6 @@
 ## Проект выполнила Евгения Волкова
 
 ### Технолгии:
--html;
--css;
-javascript.
+- html;
+- css;
+- javascript.
