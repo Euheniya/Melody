@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Bebas Neue";
+  src: local("Bebas Neue Regular"), local("BebasNeue-Regular"),
+    url("../fonts/BebasNeue-Cyrillic.woff2") format("woff2"),
+    url("../fonts/BebasNeue-Cyrillic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   box-sizing: border-box; /*Для всех элементов правильная ширина и высота*/
 }
@@ -49,4 +59,60 @@ body {
   line-height: 20px; /**/
   color: white; /**/
   text-decoration: none; /**/
+}
+.main {
+  max-width: 1280px; /*задали максимальный размер*/
+  margin: auto; /*Выровняли отступы*/
+  padding-top: 54px; /*Внутренний отступ*/
+  display: flex; /*Гибкое расположение, по ширине экрана*/
+}
+.main-info {
+  flex-grow: 1; /*занимает все место в блоке*/
+  text-align: center; /*вырвынивание по центру*/
+  display: flex; /*расположение элементов по ширине*/
+  flex-direction: column; /*расположение элементов в столбец*/
+  align-items: center;
+  justify-content: space-between; /*Расположение элементов по высоте по краям*/
+}
+.home-image path {
+  opacity: 0; /*прозрачность*/
+  cursor: pointer; /*курсор в виде руки*/
+}
+.home-image path:hover {
+  opacity: 1; /*прозрачность*/
+}
+.counter-group {
+  display: flex; /*выравнивание по ширине экрана*/
+  flex-direction: column; /*Расположение в столбец*/
+  align-items: center; /*выравнивание по центру*/
+}
+.counter-button {
+  cursor: pointer;
+  background-color: white; /*цвет фона элемента*/
+  border: none; /*невидимая рамка элемента*/
+}
+.counter-arrow-down {
+  transform: rotateX(180deg); /*Поворот элемента по оси У*/
+}
+.main-title {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif; /*тип шрифта*/
+  font-weight: normal; /*толщина*/
+  font-size: 37px; /*размер*/
+  line-height: 44px; /*размер линий*/
+  color: #635854; /*цвет шрифта*/
+}
+.counter {
+  color: #635854; /*цвет шрифта*/
+  font-size: 124px; /*размер шрифта*/
+  font-family: "Bebas Neue", sans-serif; /*тип шрифта*/
+  margin-top: 10px; /*отступ сверху и снизу от элемента*/
+}
+.button-primary {
+  background: #3596f5; /*цвет фона*/
+  border-radius: 6px; /**/
+  color: white; /*цвет текста*/
+  border: none; /*граница бесцветная*/
+  padding: 16px 36px; /*размер отступа от текста внутри кнопки*/
+  cursor: pointer; /*курсор в виде руки*/
 }
