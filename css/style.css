@@ -81,6 +81,9 @@ body {
 .home-image path:hover {
   opacity: 1; /*прозрачность*/
 }
+path.current-floor {
+  opacity: 1; /*прозрачность*/
+}
 .counter-group {
   display: flex; /*выравнивание по ширине экрана*/
   flex-direction: column; /*Расположение в столбец*/
