@@ -1,0 +1,110 @@
+CoderNet
+<https://codernet.ru/>
+
+  * Книги <https://codernet.ru/books/>
+  * Видео <https://codernet.ru/video/>
+  * Статьи <https://codernet.ru/articles/>
+
+Искать
+
+Меню
+
+  *
+
+    Книги
+
+    <https://codernet.ru/books/>
+  *
+
+    Видео
+
+    <https://codernet.ru/video/>
+  *
+
+    Статьи
+
+    <https://codernet.ru/articles/>
+
+  * Главная
+
+    <https://codernet.ru/>
+  * CSS
+
+    <https://codernet.ru/books/css/>
+  * HTML5 + CSS3. Основы современного WEB-дизайна. Кириченко А.В.,
+    Хрусталев А.А.
+
+
+  HTML5 + CSS3. Основы современного WEB-дизайна. Кириченко А.В.,
+  Хрусталев А.А.
+
+Скачать
+
+<https://codernet.ru/tem/static/pdfjs/web/viewer.html?file=/media/HTML5%20+%20CSS3.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE%20WEB-%D0%B4%D0%B8%D0%B7%D0%B0%D0%B9%D0%BD%D0%B0.%20%D0%9A%D0%B8%D1%80%D0%B8%D1%87%D0%B5%D0%BD%D0%BA%D0%BE%20%D0%90.%D0%92.,%20%D0%A5%D1%80%D1%83%D1%81%D1%82%D0%B0%D0%BB%D0%B5%D0%B2%20%D0%90.%D0%90./html5_css3_oYGDNua.pdf>
+
+
+
+    Описание
+
+Книга содержит исчерпывающий материал по теме для начинающего
+программиста и научит вас верстать адаптивные и красивые макеты,
+используя новейшие возможности языка разметки и языка стилей. Каждую
+главу, каждое объяснение сопровождает хороший пример кода.
+
+
+      Схожие книги
+
+<https://codernet.ru/books/css/novaya_bolshaya_kniga_css_d_makfarland/>
+Новая большая книга CSS. Д. Макфарланд
+CSS
+ru
+
+
+        Новая большая книга CSS. Д. Макфарланд
+
+<https://codernet.ru/books/css/css_pocket_reference_4ed_meyer/>
+CSS Pocket Reference. 4th. Eric A. Meyer
+CSS
+en
+
+
+        CSS Pocket Reference. 4th. Eric A. Meyer
+
+<https://codernet.ru/books/css/izuchaem_html_xhtml_css/>
+Изучаем HTML, XHTML и CSS. Робсон Э. & Фримен Э.
+CSS
+ru
+
+
+        Изучаем HTML, XHTML и CSS. Робсон Э. & Фримен Э.
+
+<https://codernet.ru/books/css/html_5_css_3_i_web_2_razrabotka_sovremennyx_web_sajtov_dronov/>
+
+HTML 5, CSS 3 и Web 2.0. Разработка современных Web-сайтов. В. Дронов
+CSS
+ru
+
+
+        HTML 5, CSS 3 и Web 2.0. Разработка современных Web-сайтов. В.
+        Дронов
+
+CoderNet <https://codernet.ru/>
+
+  *
+
+    <http://t.me/codernetru>
+  *
+
+    <https://vk.com/codernet_team>
+  *
+
+    <https://twitter.com/CoderNet_Team>
+  *
+
+    <https://www.facebook.com/CoderNet.RU/>
+  *
+
+    <https://ok.ru/group/55045061738728>
+
+© 2021 The CoderNet Team
+
