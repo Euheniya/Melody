@@ -72,7 +72,7 @@ body {
   display: flex; /*расположение элементов по ширине*/
   flex-direction: column; /*расположение элементов в столбец*/
   align-items: center;
-  justify-content: space-between; /*Расположение элементов по высоте по краям*/
+  justify-content: space-around; /*Расположение элементов по высоте по краям*/
 }
 .home-image path {
   opacity: 0; /*прозрачность*/
@@ -105,7 +105,7 @@ path.current-floor {
   line-height: 44px; /*размер линий*/
   color: #635854; /*цвет шрифта*/
 }
-.counter {
+.floor-counter {
   color: #635854; /*цвет шрифта*/
   font-size: 124px; /*размер шрифта*/
   font-family: "Bebas Neue", sans-serif; /*тип шрифта*/
@@ -118,4 +118,115 @@ path.current-floor {
   border: none; /*граница бесцветная*/
   padding: 16px 36px; /*размер отступа от текста внутри кнопки*/
   cursor: pointer; /*курсор в виде руки*/
+}
+
+.modal {
+  position: fixed; /*фиксированная позиция окна поверх всего сайта*/
+  left: 0; /*приклеиваем окно к левому краю*/
+  top: 0%; /*приклеиваем к верху*/
+  width: 100%; /*ширан на весь экран*/
+  height: 100%; /*высота на весь экран*/
+  background-color: rgba(0, 0, 0, 0.8); /*полупрозрачный черный фон*/
+  display: flex; /*сделали родительское окно гибким по размеру*/
+  justify-content: center; /*выравнивание по центру*/
+  align-items: center; /*выравнивание по центру*/
+  opacity: 0; /*модальное окно прозрачное*/
+  transform: scale(0); /*модальное окно сжимается в 0, его не видно*/
+  transition: opacity 0.2s; /*скорость плавного появления модального окна*/
+}
+
+.is-open {
+  opacity: 1; /*когда открыто окно, оно полностью непрозрачно*/
+  transform: scale(1); /*модальное окно "разжимается" полностью, оно видно*/
+}
+
+.modal-dialog {
+  position: relative; /*для расположения кнопки закрытия окна в этом диалоговом окне*/
+  max-width: 1000px; /*ширина окна со схемами*/
+  min-height: 565px; /*высота окна со схемами*/
+  background-color: white; /*цвет диалогового окна*/
+  flex-grow: 1; /*диалоговое окно занимает все пространство по ширине и высоте*/
+  display: flex;
+  opacity: 0;
+  transform: translateY(-10%); /*передвигаем окно вверх*/
+  transition: transform 0.2s, opacity 0.2s;
+  transition-delay: 0.2s; /*модальное окно появится с задержкой по отношению ко всему диалоговому окну*/
+}
+
+.is-open > .modal-dialog {
+  opacity: 1;
+  transform: translateY(0); /*трансформация закончена*/
+}
+
+.modal-image {
+  background-color: #ebebeb; /*цвет фона*/
+  width: 60%; /*размер левой части диалогового окна*/
+  text-align: center; /*выравнивание всего текста по центру*/
+  padding: 50px;
+}
+
+.flats path {
+  /*все этажи должны быть невидимыми*/
+  opacity: 0;
+  cursor: pointer;
+}
+
+.flats path:hover {
+  /*при наведении этажи видимые*/
+  opacity: 1;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-family: "Bebas Neue", sans-serif; /*тип шрифта*/
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  margin-top: 0px; /*внешний отступ сверху*/
+  margin-bottom: 25px; /*внешний отступ снизу*/
+}
+
+.modal-info {
+  padding: 50px 46px; /*внутренние отступы по периметру*/
+  width: 40%; /*ширина правой части диалогового окна*/
+}
+
+.flat-list {
+  padding: 0; /*отступ слева в списке*/
+  list-style: none; /*отключаем маркеры в списке*/
+  margin-top: 55px; /*отступ сверху от списка*/
+}
+
+.flat-item {
+  margin-bottom: 10px; /*отступы между элементами списка*/
+}
+
+.flat-link {
+  font-size: 16px; /*размер шрифта*/
+  line-height: 19px; /*высота шрифта*/
+  color: #635854; /*цвет шрифта*/
+  text-decoration: none; /*текст без подчеркиваний*/
+}
+
+.flat-link:hover {
+  color: #3596f5; /*цвет ссылки при наведении мыши*/
+  text-decoration: underline; /*подчеркивание при наведении мыши*/
+}
+
+.modal-alert {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #635854;
+  margin-top: 56px; /*внешний отступ сверху*/
+}
+
+.modal-close-button {
+  position: absolute; /*расположение объекта*/
+  right: 27px; /*клеим к правому краю*/
+  top: 38px; /*клеим к верхнему краю*/
+  cursor: pointer; /*курсор - рука*/
+  background: white; /*фон*/
+  border: none; /*убираем обводку*/
 }

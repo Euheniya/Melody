@@ -3,8 +3,11 @@ $(document).ready(function () {
   var floorPath = $(".home-image path"); /*переменная, обозначающая подсветку этажа */
   var counterUp=$(".counter-up");/*переменная, обозначающая верхнюю стрелку в счетчике */
   var counterDown=$(".counter-down");/*переменная, обозначающая нижнюю стрелку в счетчике */
-  
-  //функция пи наведении мышкой на этаж  
+  var modal = $(".modal");/*переменная, модальное окно*/
+  var modalCloseButton = $(".modal-close-button");/*переменная для кнопки закрытия модального окна */
+  var viewFlatsButton=$(".view-flats");/*переменная для кнопки Смотреть квартиры */
+
+  //функция при наведении мышкой на этаж  
   /*floorPath.on("click",function(){ /*при нажатии на этаж меняется счетчик */
    floorPath.on("mouseover",function(){/*при наведении на этаж меняется счетчик */
    /* console.log($(this).attr("data-floor"));/*Вывод № этажа в консоль*/ 
@@ -12,6 +15,12 @@ $(document).ready(function () {
    currentFloor=$(this).attr("data-floor");/*переменной присвоили № этажа */
    $(".counter").text(currentFloor);/*счетчику присвоили переменную с № этажа */
   });
+
+    floorPath.on('click',toggleModal)/*при нажатии на этаж открывается модальное окно*/
+
+    modalCloseButton.on('click',toggleModal);/*закрыть модальное окно*/
+
+    viewFlatsButton.on('click',toggleModal); /*вызов модального окна при нажатии на кнопку смотреть */
 
   //отслеживаем клик по кнопке вверх
   counterUp.on("click", function(){
@@ -37,5 +46,9 @@ $(document).ready(function () {
     floorPath.removeClass("current-floor");/*очищаем переменную currentFloor */
     $(`[data-floor=${UsCurrentFloor}]`).toggleClass("current-floor");/*добавляем класс  этажу */
    }
-  })
+  });
+
+  function toggleModal(){ /*функция открытия/закрытия модального окна */
+      modal.toggleClass("is-open");
+    }
 });
